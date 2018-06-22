@@ -1,0 +1,21 @@
+page-edit-profile {
+	
+	.profile{
+    padding: 32px;
+    background-color: #0763e9;
+    color: #fff;
+    text-align: center;
+	}
+	.profile-bg {
+	    background-image: linear-gradient(135deg,#044eb9,#0763e9,#4cc4ff);
+	}
+	.profile img {
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    border: solid 4px #fff;
+    display: inline;
+    -webkit-box-shadow: 0 0 28px rgba(255,255,255,.65);
+    box-shadow: 0 0 28px rgba(255,255,255,.65);
+   }
+}

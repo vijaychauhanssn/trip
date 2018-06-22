@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+       <ion-title>Edit Profile</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="profile">
+<ion-card>
+<ion-card-content class="profile-bg">
+	 <img src="assets/img/avatar.jpeg">
+	 <h2 class="fw500">Vijay Chauhan</h2>
+	 <h3 color="light"  class="text">Customer</h3>
+	 <button ion-button color="secondary">Secondary</button>
+  </ion-card-content>
+	<ion-grid>
+	  <ion-row>
+	    <ion-col col-12>
+	    	<ion-item>
+			  <ion-label color="primary" floating>Full Name:</ion-label>
+			  <ion-input></ion-input>
+			</ion-item>
+			<ion-item>
+			  <ion-label color="primary" floating>Email:</ion-label>
+			  <ion-input></ion-input>
+			</ion-item>
+			<ion-item>
+			  <ion-label color="primary" floating>Address:</ion-label>
+			  <ion-input></ion-input>
+			</ion-item>
+			<ion-item>
+			  <ion-label>City</ion-label>
+			  <ion-select [(ngModel)]="toppings" multiple="true">
+			    <ion-option>Bacon</ion-option>
+			    <ion-option>Black Olives</ion-option>
+			    <ion-option>Extra Cheese</ion-option>
+			    <ion-option>Mushrooms</ion-option>
+			    <ion-option>Pepperoni</ion-option>
+			    <ion-option>Sausage</ion-option>
+			  </ion-select>
+			</ion-item>
+			<ion-item>
+			  <ion-label>State</ion-label>
+			  <ion-select [(ngModel)]="toppings" multiple="true">
+			    <ion-option>Bacon</ion-option>
+			    <ion-option>Black Olives</ion-option>
+			    <ion-option>Extra Cheese</ion-option>
+			    <ion-option>Mushrooms</ion-option>
+			    <ion-option>Pepperoni</ion-option>
+			    <ion-option>Sausage</ion-option>
+			  </ion-select>
+			</ion-item>
+			<ion-list radio-group [(ngModel)]="relationship">
+			  <ion-item>
+			    <ion-label>Friends</ion-label>
+			    <ion-radio value="friends" checked></ion-radio>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label>Family</ion-label>
+			    <ion-radio value="family"></ion-radio>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label>Enemies</ion-label>
+			    <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+			  </ion-item>
+			</ion-list>
+	    </ion-col>
+	  </ion-row>
+	</ion-grid>
+</ion-card>
+ <button ion-button full (click)="editToast('bottom')">Edit</button>
+ 
+</ion-content>

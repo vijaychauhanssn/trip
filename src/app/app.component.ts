@@ -8,6 +8,7 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 
 export interface MenuItem {
     title: string;
@@ -63,6 +64,10 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
+  editProfile(){
+    this.nav.setRoot(EditProfilePage);
+  }
+  
   logout() {
     this.nav.setRoot(LoginPage);
   }
